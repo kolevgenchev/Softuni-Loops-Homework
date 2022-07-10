@@ -1,11 +1,16 @@
 function sumOfNumbers(input){
-let n=input[0]
-let number=0;
-let sum=0;
-for(let i=0;i<n.length;i++){
-    let number = parseInt(n[i])
-    sum+=number
+    let number=Number(input[0])
+    let index=1
+    let sum=0;
+    while(sum<number){
+     let currentNumber=Number(input[index])
+     index++
+     sum+=currentNumber
+    }
+    console.log(sum)
 }
-console.log(sum)
-}
-sumOfNumbers(["564891"])
+sumOfNumbers(["100",
+"10",
+"20",
+"30",
+"40"])

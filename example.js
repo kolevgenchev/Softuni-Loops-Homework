@@ -1,6 +1,5 @@
-function example (){
-    let name ="bojidar "
-    let number=name.length
-    console.log(number)
+function example (input){
+    let h=input.length
+console.log(h)
 }
-example()
+example(["2","14","3"])
